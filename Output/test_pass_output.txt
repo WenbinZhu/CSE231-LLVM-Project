@@ -1,0 +1,3 @@
+Hello: __cxx_global_var_init
+Hello: main
+Hello: _GLOBAL__sub_I_HelloWorld.cpp

@@ -1,0 +1,7 @@
+Some windows machines won't allow execution of scripts in Powershell. You will have to edit the paths in the following command to match your configuration and copy-paste it into a powershell to start the provided image. Make sure you maintain the syntax for paths as shown.
+
+The option --rm will automatically kill the docker image as soon as you exit it so it doesn't run in the background.
+The option -it will open an interactive session of the image.
+The -v options mount the specified folders to the mount points (path-on-host:mount-point-in-docker). Do not modify the mount points. 
+
+docker run --rm -it -v //c/Users/prodr/Documents/UCSD/CSE231_TA/CSE231_Project/Output:/output -v //c/Users/prodr/Documents/UCSD/CSE231_TA/CSE231_Project/Tests:/tests -v //c/Users/prodr/Documents/UCSD/CSE231_TA/CSE231_Project/Passes:/LLVM_ROOT/llvm/lib/Transforms/CSE231_Project prodromou87/llvm:3.9
